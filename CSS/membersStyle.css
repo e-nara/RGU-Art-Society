@@ -1,0 +1,86 @@
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}.text-block {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 5%;
+    top: 2%;
+    
+    color: #1F1C2A;
+    }
+    .current-members {
+    position: absolute;
+    width: 20%;
+    height: 70px;
+    left: 6%;
+    top: 680px;
+
+    font-weight: 900;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: center;
+
+    color: #FFFFFF;
+    }
+    .sign-up {
+    position: absolute;
+    width: 20%;
+    height: 70px;
+    left: 40%;
+    top: 680px;
+  
+    font-weight: 700;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: center;
+  
+    color: #FFFFFF;
+    }
+    .subscribe-now {  
+    position: absolute;
+    width: 20%;
+    height: 70px;
+    left: 73%;
+    top: 680px;
+
+    font-weight: 900;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: center;
+
+    color: #FFFFFF;
+    
+    } 
+    
+    th, td { 
+
+    background: #1F1C2A;
+    border-radius: 13px;
+    font-weight: 600;
+    line-height: 61px;
+    font-size: 120%;
+    text-align: left;
+    padding-left: 4%;
+
+    color: #FFFFFF;
+
+    }
+    li {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 35px;
+      text-align: left;
+    }
+    p {
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 35px;
+
+    color: #1F1C2A;
+
+    }
+  
+    
+    

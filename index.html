@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- This webpage was implemented by Enara Abad-->
+<html>
+    <head>
+        <!-- title and css links go here -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/homeCSS.css"> 
+        <link rel="stylesheet" href="CSS/masterCSS.css">
+        <!-- you may also want to implement your own css sheet for individual features of your page -->
+        
+
+        <!--Links to the extrernal javascript used by certain elements on the page-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    </head>
+
+    <header>
+        <img style="position:absolute" src="images/Starry-Night.jpg" alt="Starry-Night" width = 100%, height = 250px>*
+			
+		<h1>RGU <br> ART <br> SOCIETY</h1>
+        
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="index.html"><b>Home</b></a></div>
+                <div class="col"><a href="membersPage.html">Members Area</a></div>
+                <div class="col"><a href="imageGallery.html">Image Gallery</a></div>
+                <div class="col"><a href="#">Contact us</a></div>
+                <div class="col"><a href="#">Event Calendar</a></div>
+
+                <!-- The dropdown content is managed and displayed here -->
+                <div class="col">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Explore More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Art Forum</a></li>
+                            <li><a class="dropdown-item" href="#">Resources and Tutorials</a></li>
+                            <li><a class="dropdown-item" href="opportunities.html">Opportunities</a></li>
+                            <li><a class="dropdown-item" href="placesToVisit.html">Places to visit</a></li>
+                            <li><a class="dropdown-item" href="styleGuide.html">Art Style Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- The <b> tags go around the current page label -->
+        <!-- Explore More will be integrated with extra links that will appear by hovering over -->
+    </nav>
+
+    <body>
+        <main>
+            <!-- main content (you write this!)-->
+            <div class="container">
+                <div class="row">
+                    <article class="col-8"> 
+                        <h2>Welcome to the RGU Art Society</h2>
+                        <h3>About Us</h3>
+        
+                        <p id="introText">
+                            Hello! We are the RGU Art Society, a society geared specifically towards students interested in 2D or 3D art. We started this Society in 2022 because we wanted to create a hub for the creatives of RGU to share art, recieve advice, and get involved in events that engage this enriching and rewarding hobby. The RGU Art Society is a welcoming environment for anyone interested in art as a hobby or career, beginners intermediates and experts alike, so please consider becoming a member if you’d like to meet like-minded artsy individuals! <br><br>
+        
+                            Please find on our website forums to discuss and share art, material to inspire you, and resources that you may find useful on your creative journey. <br><br>
+        
+                            If you’d like to learn more about our current members, or even become a member yourself, check out the ‘Current Members’ tab or <a href="#">click here</a>. <br><br>
+        
+                            We hope you consider joining us!
+                        </p>
+        
+                        <h2>News in the Art World</h2>
+        
+                        <p>Check out some recent headlines from the world of Art & Design!</p>
+                    </article>
+        
+                    <aside class="col-4">
+                        <a class="twitter-timeline" data-height="85%" href="https://twitter.com/RobertGordonUni?ref_src=twsrc%5Etfw">Tweets by RobertGordonUni</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                    </aside>
+                </div>
+            </div>
+    
+            <div id="newsBand">
+                <div class="row">
+                    <div class="col">
+                        <div class="newsArticles">
+                            <div class="headlines">
+                                <h2>Van Gogh Portrait Exhibition comes to London</h2>
+                            </div>
+                                
+                            <img src="images/vanGoghGallery.png" alt="Two people looking at a self portrait of van gogh in a gallery." height="242px" width="385px">
+                            <p>
+                                17 portraits from legendary artist Vincent Van Gogh have comes to the Courtauld Gallery in London, recieving rave reviews from critics. 
+                            </p>
+                            <p><b><a href="https://www.bbc.co.uk/news/entertainment-arts-60227547">
+                                Read More on BBC News 
+                            </a></b></p>
+                        </div> 
+                    </div>
+    
+                    <div class="col">
+                        <div class="newsArticles">
+                            <div class="headlines">
+                                <h2>Illuminated Art Festival ‘Light Up Leicester’ coming in March</h2>
+                            </div>
+                            
+                            <img src="images/lightShow.png" alt="A large light sculpture of a crouching figure in a city at nighttime." height="242px" width="385px">
+                            <p>
+                                The outdoor light-up art show will feature 9 art installations forming a trail around the city of Leicester. It will span across 4 days.
+                            </p>
+                            <p><b><a href="https://www.bbc.co.uk/news/uk-england-leicestershire-60202378">
+                                Read More on BBC News 
+                            </a></b></p>
+                        </div> 
+                    </div>
+                        
+                    <div class="col">
+                        <div class="newsArticles">
+                            <div class="headlines">
+                                <h2>How the NFT Market is Vulnerable to Money Laundering</h2>
+                            </div>
+                            
+                            <img src="images/nfts.png" alt="A grid of pixel-art NFTs on a blue-grey background." height="242px" width="385px">
+                            <p>
+                                A recent study shows how the crypto-NFT market is an easy platform for scammers to gain profit illegitimately.
+                            </p>
+                            <p><b><a href="https://www.theartnewspaper.com/2022/02/08/us-treasury-study-art-market-money-laundering-nfts">
+                                Read More on The Art Newspaper
+                            </a></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <h2>Featured Pages</h2>
+                <p>
+                    Since you’re already here, why not check out some of our additional webpages to spark your creative curiosity?
+                </p>
+    
+                <div class="featured">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <a href="#">
+                                <img src="images/paintedEye.jpg" class="circle-image" alt="A colourful expressive painting of an eye." height="200px" width="200px">
+                                <p><b>
+                                    Inspiration Gallery 
+                                </b></p>
+                            </a>
+                        </div>
+        
+                        <div class="col">
+                            <a href="#">
+                                <img src="images/charcoalDrawing.jpg" class="circle-image" alt="A top-down image of someone making a charcoal drawing of a jar." height="200px" width="200px">
+                                <p><b>
+                                    Art Tutorials
+                                </b></p>
+                            </a>
+                        </div>
+                            
+                        <div class="col">
+                            <a href="#">
+                                <img src="images/swingingPainting.jpg" class="circle-image" alt="A cropped version of The Swing Painting by Jean Honore Fragonard." height="200px" width="200px">
+                                <p><b>
+                                    Educational Material
+                                </b></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">RGU Art Society &copy</div>
+
+                <div class="col-6"> </div>
+
+                <div class="col"> </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">email: hello@rguartsoc.co.uk</div>
+
+                <div class="col-6"> </div>
+
+                <div class="col">Home Page Designed by</div>
+            </div>
+
+            <div class="row">
+                <div class="col">tel: 01224 125 434</div>
+
+                <div class="col-6" id="footerMiddle">Website Designed by Creatively Stupid Students (CSS)</div>
+                
+                <div class="col">Enara Abad</span>
+            </div>
+        </div>
+    </footer>
+</html>

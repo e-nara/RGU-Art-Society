@@ -1,0 +1,63 @@
+.circle-image{
+    border-radius:50%;
+}
+
+.headlines{
+    height:150px;
+}
+
+#newsBand{
+    background-color: #477CA2;
+    padding: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    height:fit-content;
+    color:white;
+    margin-bottom:7.5%
+}
+
+#newsBand h2{
+    color:white;
+
+}
+
+#newsBand a{
+    color:white;
+    text-decoration: none;
+}
+
+#newsBand img {
+    margin-bottom: 7.5%;
+}
+
+.featured{
+    margin-top:5%;
+} 
+
+.featured p{
+    margin-top:10%;
+    text-align: center;
+}
+
+.featured .col{
+    margin:1px;
+}
+
+.featured img{
+    position:relative;
+    left:22%;
+}
+
+.featured a{
+    color: #1F1C2A;
+    text-decoration: none;
+}
+
+#introText{
+    margin-bottom:20%;
+    padding-right:4%;
+}
+
+article{
+    margin-bottom: 2%;
+}

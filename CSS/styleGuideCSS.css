@@ -1,0 +1,38 @@
+#mini-heading{
+    font-size:130%;
+}
+
+#contentsList{
+    list-style: none;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+#fixedButton{
+    position: fixed;
+    background-color: #5FAFE1;
+
+    bottom: 0;
+    right: 0;
+    padding: .85%;
+    
+}
+
+#fixedButton a{
+    color:white;
+}
+
+.infoBoxes .col{
+    padding:10px;
+}
+
+.infoBoxes {
+    margin-bottom:5%;
+}
+
+.infoBoxes p{
+    margin:10px;
+    margin-bottom:50px;
+    font-size: 110%;
+}
+

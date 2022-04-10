@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- This webpage was implemented by Robbie Ewen-->
+<html>
+    <head>
+        <!-- title and css links go here -->
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/masterCSS.css">
+
+        <!--Links to the extrernal javascript used by certain elements on the page-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    	<script src="buttons.js"></script>
+	    
+        <!-- you may also want to implement your own css sheet for individual features of your page --> 
+    </head>
+
+    <header>
+        <img style="position:absolute" src="images/Starry-Night.jpg" alt="Starry-Night" width = 100%, height = 250px>
+			
+		<h1>RGU <br> ART <br> SOCIETY</h1>
+        
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="index.html">Home</a></div>
+                <div class="col"><a href="membersPage.html">Members Area</a></div>
+                <div class="col"><a href="imageGallery.html"><b>Image Gallery</b></a></div>
+                <div class="col"><a href="#">Contact Us</a></div>
+                <div class="col"><a href="#">Event Calendar</a></div>
+
+                <!-- The dropdown content is managed and displayed here -->
+                <div class="col">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Explore More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Art Forum</a></li>
+                            <li><a class="dropdown-item" href="#">Resources and Tutorials</a></li>
+                            <li><a class="dropdown-item" href="opportunities.html">Opportunities</a></li>
+                            <li><a class="dropdown-item" href="placesToVisit.html">Places to visit</a></li>
+                            <li><a class="dropdown-item" href="styleGuide.html">Art Style Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   
+    </nav>
+
+    <main>
+        <!-- main content (you write this!)-->
+        <div class="container">
+		
+			<h2 style="color:#2C66C4">Image Gallery</h2>
+			<h3 style="color:#5FAFE1">Art Inspiration</h3>
+            <p>Have a look at some art pieces </p>
+			<button id=1 class="btn" style="color:white; background-color:#2C66C4">Flowers</button>
+			<button id=2 class="btn" style="color:white; background-color:#5FAFE1">Portrait</button>
+			<button id=3 class="btn" style="color:white; background-color:#5FAFE1">Environment</button>
+            <br/>
+            <br/>
+		
+			<div class="row">
+				<div class="col">
+					<img class="ImageGallery" src="images\image1.png" alt="Image1" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image2.png" alt="Image2" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image3.png" alt="Image3" width="350px" height="350px">
+				</div>
+			</div>
+			
+			<br/>
+			
+			<div class="row">
+				<div class="col">
+					<img class="ImageGallery" src="images\image4.png" alt="Image4" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image5.png" alt="Image5" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image6.png" alt="Image6" width="350px" height="350px">
+				</div>
+			</div>
+			
+			<br/>
+			
+			<div class="row">
+				<div class="col">
+					<img class="ImageGallery" src="images\image7.png" alt="Image7" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image8.png" alt="Image8" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image9.png" alt="Image9" width="350px" height="350px">
+				</div>
+			</div>
+			
+			<br/>
+			
+			<div class="row">
+				<div class="col">
+					<img class="ImageGallery" src="images\image10.png" alt="Image10" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image11.png" alt="Image11" width="350px" height="350px">
+				</div>
+				<div class="col">
+					<img class="ImageGallery" src="images\image12.png" alt="Image12" width="350px" height="350px">
+				</div>
+			</div>
+
+        </div>
+    </main>
+
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col">RGU Art Society &copy</div>
+
+                <div class="col-6"> </div>
+
+                <div class="col"> </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">email: hello@rguartsoc.co.uk</div>
+
+                <div class="col-6"> </div>
+
+                <div class="col">Image Gallery Designed by</div>
+            </div>
+
+            <div class="row">
+                <div class="col">tel: 01224 125 434</div>
+
+                <div class="col-6" id="footerMiddle">Website Designed by Creatively Stupid Students (CSS)</div>
+                
+                <div class="col">Robbie Ewen</div>
+            </div>
+        </div>
+    </footer>
+</html>
