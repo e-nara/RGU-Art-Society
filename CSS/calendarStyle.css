@@ -7,20 +7,21 @@
   height: 1300px;
   padding-left: 2%;
   padding-right: 2%;
+  padding: 3%;
 }
 
 #calendarHeader{
   color: white;
-  padding-top: 20px
+  margin-bottom: 3%;
 }
 
 #calendarMonth{
   color:#F8E47E;
+  margin-bottom: 2%;
 }
 
 #calendarDays th{
-  font-size:25pt;
-
+  font-size: 120%;
   padding-right: 30px;
 
   color:#6495ED;
@@ -48,6 +49,10 @@
 
 #meetButton{
   background:#ffec81;
+}
+
+.container{
+  width:120%;
 }
 
 /*This peice of css stops the collapse from wiggin out*/

@@ -15,7 +15,7 @@
     width: 20%;
     height: 70px;
     left: 6%;
-    top: 680px;
+    top: 615px;
 
     font-weight: 900;
     font-size: 100%;
@@ -29,7 +29,7 @@
     width: 20%;
     height: 70px;
     left: 40%;
-    top: 680px;
+    top: 615px;
   
     font-weight: 700;
     font-size: 100%;
@@ -43,7 +43,7 @@
     width: 20%;
     height: 70px;
     left: 73%;
-    top: 680px;
+    top: 615px;
 
     font-weight: 900;
     font-size: 100%;
@@ -76,7 +76,6 @@
     p {
     font-weight: 400;
     font-size: 100%;
-    line-height: 35px;
 
     color: #1F1C2A;
 

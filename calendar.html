@@ -6,7 +6,6 @@
 	<title>Calendar</title>
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/masterCSS.css">
-    <link rel="stylesheet" href="CSS/pageStyles.css">
     <link rel="stylesheet" href="CSS/calendarStyle.css">
 	
 	<!--Links to external javascript library-->
@@ -61,15 +60,12 @@
             <!--A table is used to manage the content with collapse menus from bootstrap being used to store information the numbers rising is a feature not a bug-->
             <!--The original idea of generation with javascript was scrapped due to it being a much harder task than thought although it's something that I am planning on tackling in my personal time-->
             <div id = "calendarBody">
-                <div id = "calendarHeader">
-                    <h1>Monthly Events Calendar</h1>
-                </div>
-        
                 <div>
-                    <h1 id = "calendarMonth">April</h1>
-                </div>
+                    <h2 id = "calendarHeader">Monthly Events Calendar</h2>
 
-                <div id = "calendarDates">
+                    <h3 id = "calendarMonth">April</h3>
+
+                    <div id = "calendarDates">
                     <table>
                         <tr id = "calendarDays"> 
                             <th>Mon</th>
@@ -132,12 +128,12 @@
                             <td>
                                 <p>27</p>
                                 <button id = "meetButton" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#meetText" aria-expanded="false" aria-controls="meetText">
-                                    SCOCIETY DAY
+                                    SOCIETY DAY
                                 </button>
 
                                 <div class="collapse" id="meetText">
                                     <div class="card card-body">
-                                    Meet and great with scociety memebers
+                                    Meet and greet with society memebers
                                     </div>
                                 </div> 
                             </td>
@@ -150,6 +146,7 @@
                             <td><p>31</p></td>
                         </tr>
                     </table>
+                </div>
                 </div>
             </div>
         </main>
