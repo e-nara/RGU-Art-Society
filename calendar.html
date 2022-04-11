@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- This webpage was implemented by Jamie-->
+<html>
+    <head>
+        <!-- title and css links go here -->
+	<title>Calendar</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/masterCSS.css">
+    <link rel="stylesheet" href="CSS/pageStyles.css">
+    <link rel="stylesheet" href="CSS/calendarStyle.css">
+	
+	<!--Links to external javascript library-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    
+        <!-- you may also want to implement your own css sheet for individual features of your page -->
+    </head>
+
+    <header>
+        <img style="position:absolute" src="images/Starry-Night.jpg" alt="Starry-Night" width = 100%, height = 250px>
+			
+		<h1>RGU <br> ART <br> SOCIETY</h1>
+        
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="index.html">Home</a></div>
+                <div class="col"><a href="membersPage.html">Members Area</a></div>
+                <div class="col"><a href="imageGallery.html">Image Gallery</a></div>
+                <div class="col"><a href="#">Contact us</a></div>
+                <div class="col"><a href="calendar.html"><b>Event Calendar</b></a></div>
+
+                <!-- The dropdown content is managed and displayed here -->
+                <div class="col">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore More
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background: lightblue;">
+                        <li><a class="dropdown-item" href="#">Art Forum</a></li>
+                        <li><a class="dropdown-item" href="tutorials.html">Resources and Tutorials</a></li>
+                        <li><a class="dropdown-item" href="opportunities.html">Opportunities</a></li>
+                        <li><a class="dropdown-item" href="placesToVisit.html">Places to visit</a></li>
+                        <li><a class="dropdown-item" href="styleGuide.html">Art Style Guide</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <body>
+        <main>
+            <!--A table is used to manage the content with collapse menus from bootstrap being used to store information the numbers rising is a feature not a bug-->
+            <!--The original idea of generation with javascript was scrapped due to it being a much harder task than thought although it's something that I am planning on tackling in my personal time-->
+            <div id = "calendarBody">
+                <div id = "calendarHeader">
+                    <h1>Monthly Events Calendar</h1>
+                </div>
+        
+                <div>
+                    <h1 id = "calendarMonth">April</h1>
+                </div>
+
+                <div id = "calendarDates">
+                    <table>
+                        <tr id = "calendarDays"> 
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <!--Here a button is used to display content through the use of bootstrap collapse menus-->
+                                <p>1</p>
+
+                                <button id = "eventButton" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseText" aria-expanded="false" aria-controls="collapseText">
+                                    EVENT DAY
+                                </button>
+
+                                <div class="collapse" id="collapseText">
+                                    <div class="card card-body">
+                                    Art event
+                                    </div>
+                                </div>
+                            </td>
+                            <td><p>2</p></td>
+                            <td><p>3</p></td>
+                            <td><p>4</p></td>
+                            <td><p>5</p></td>
+                            <td><p>6</p></td>
+                            <td><p>7</p></td>
+                        </tr>
+
+                        <tr>
+                            <td><p>8</p></td>
+                            <td><p>9</p></td>
+                            <td><p>10</p></td>
+                            <td><p>11</p></td>
+                            <td><p>12</p></td>
+                            <td><p>13</p></td>
+                            <td><p>15</p></td>
+                        </tr>
+
+                        <tr>
+                            <td><p>16</p></td>
+                            <td><p>17</p></td>
+                            <td><p>18</p></td>
+                            <td><p>19</p></td>
+                            <td><p>20</p></td>
+                            <td><p>21</p></td>
+                            <td><p>22</p></td>
+                        </tr>
+
+                        <tr>
+                            <td><p>23</p></td>
+                            <td><p>24</p></td>
+                            <td><p>25</p></td>
+                            <td><p>26</p></td>
+                            <td>
+                                <p>27</p>
+                                <button id = "meetButton" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#meetText" aria-expanded="false" aria-controls="meetText">
+                                    SCOCIETY DAY
+                                </button>
+
+                                <div class="collapse" id="meetText">
+                                    <div class="card card-body">
+                                    Meet and great with scociety memebers
+                                    </div>
+                                </div> 
+                            </td>
+                            <td><p>28</p></td>
+                            <td><p>29</p></td>
+                        </tr>
+
+                        <tr>
+                            <td><p>30</p></td>
+                            <td><p>31</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </body>
+
+
+    <footer>
+        <div class="container">    
+            <div class="row align-items-end">
+                <div class="col">
+                    RGU Art Society &copy<br>email: hello@rguartsoc.co.uk<br>tel: 01224 125 434
+                </div>
+                <div class="col-6">
+                    Website Designed by Creatively Stupid Students (CSS)
+                </div>
+                <div class="col">
+                    Home Page Designed by<br>Jamie
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

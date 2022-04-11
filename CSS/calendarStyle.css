@@ -1,0 +1,61 @@
+/* Calendar styles */
+#calendarBody{
+  position:relative;
+  background: #1F1C2A;
+
+  width: 100%;
+  height: 1300px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#calendarHeader{
+  color: white;
+  padding-top: 20px
+}
+
+#calendarMonth{
+  color:#F8E47E;
+}
+
+#calendarDays th{
+  font-size:25pt;
+
+  padding-right: 30px;
+
+  color:#6495ED;
+}
+
+#calendarDates td{
+  width:200px;
+  height:200px;
+
+  background: #FFF8D6;
+
+  border: 10px solid #1F1C2A;
+  
+}
+
+#calendarDates td p{
+  float:right;
+  margin-top:-80px;
+  margin-right: 10px;
+}
+
+#eventButton{
+  background:#6495ED;
+}
+
+#meetButton{
+  background:#ffec81;
+}
+
+/*This peice of css stops the collapse from wiggin out*/
+#collapseText.collapse.in {
+  display: block!important;
+}
+
+#meetText.collapse.in {
+  display: block!important;
+}
+

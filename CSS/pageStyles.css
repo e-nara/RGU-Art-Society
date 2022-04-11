@@ -1,0 +1,138 @@
+/*The header styles*/
+
+h2,h3{
+    display: inline;
+}
+
+h3{
+    padding-left: 1%;
+}
+
+#headerOne{
+    margin-bottom: 4%;
+}
+
+/*Consitent Styles*/
+
+#contentOne, #contentTwo, #contentThree{
+    display: inline-block;
+
+    margin-bottom: 40px;
+}
+
+
+/* First box content styles */
+
+#contentOne{
+    background: #FEF3CD;
+}
+
+#contentOne iframe{
+    float:left;
+    border-radius: 30px;
+
+    padding: 30px;
+    padding-left: 20px;
+
+    width: 750px;
+    height: 500px;
+    left: 120px;
+    top: 740px;
+
+    
+}
+
+#contentOne p{
+    padding-top: 150px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+/* Second Box content styles*/
+#contentTwo{
+    background: #477CA2;
+
+    height: 650px;
+}
+
+#contentTwo #twitterFeedOne{
+    padding: 30px;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom:10%;
+
+    margin-right: 100px;
+  
+    width: 400px;
+    border-radius: 10px;
+}
+
+#contentTwo #contentTwoImage{
+    border-radius: 10px;
+
+    padding-bottom:155px;
+
+    width: 40%;
+
+}
+
+#contentTwo p{
+    padding-top: 150px;
+    padding-right: 30px;
+    padding-left: 20px;
+
+    width: 1000px;
+    color: white;
+}
+
+/*Third box content Styles*/
+
+#contentThree{
+    background: #F8E47E;
+
+    float: left;
+}
+
+#contentThree img, #contentFour img{
+    display: inline;
+
+    float: left;
+
+    width: 400px;
+    height: 260px;
+
+    border-radius: 10%;
+}
+
+
+#contentThree, #contentFour{
+    display: inline;
+    width:49%;
+}
+
+#contentThree p, #contentThree img, #contentFour p, #contentFour img{
+    padding: 20px;
+}
+
+/*Fourth box content Styles*/
+#contentFour{
+    background: #F8E47E;
+    display:inline;
+
+    float: right;
+}
+
+#contentFour a, #contentThree a{
+    color:rgb(183, 131, 7);
+}
+
+#contentFour a:hover, #contentThree a:hover{
+    color:purple;
+}
+
+/* Footer button*/
+#footerButton{
+    position: absolute;
+    left: 40%;
+}
+

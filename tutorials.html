@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- This webpage was implemented by Jamie-->
+<html>
+    <head>
+        <!-- title and css links go here -->
+	<title>Tutorials and Resources</title>
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/masterCSS.css">
+        <link rel="stylesheet" href="CSS/pageStyles.css">
+
+	<!--Links to external javascript library-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    
+        <script src="script.js"></script>
+        <!-- you may also want to implement your own css sheet for individual features of your page -->
+    </head>
+
+    <header>
+        <img style="position:absolute" src="images/Starry-Night.jpg" alt="Starry-Night" width = 100%, height = 250px>
+			
+		<h1>RGU <br> ART <br> SOCIETY</h1>
+        
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="index.html">Home</a></div>
+                <div class="col"><a href="membersPage.html">Members Area</a></div>
+                <div class="col"><a href="imageGallery.html">Image Gallery</a></div>
+                <div class="col"><a href="#">Contact us</a></div>
+                <div class="col"><a href="calendar.html">Event Calendar</a></div>
+
+                <!-- The dropdown content is managed and displayed here -->
+                <div class="col">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <b>Resources and Tutorials</b>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background: lightblue;">
+                        <li><a class="dropdown-item" href="#">Art Forum</a></li>
+                        <li><a class="dropdown-item" href="tutorials.html"><b>Resources and Tutorials</b></a></li>
+                        <li><a class="dropdown-item" href="opportunities.html">Opportunities</a></li>
+                        <li><a class="dropdown-item" href="placesToVisit.html">Places to visit</a></li>
+                        <li><a class="dropdown-item" href="styleGuide.html">Art Style Guide</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <body>
+
+        <!-- main content-->
+        <div class="container">            
+            <main id = "mainContainer">
+                
+                <div id = "headerOne">
+                    <!-- This page will break when resized-->
+                    <h2>Tutorials and Guides</h2> <h3>A beginners guide to creating art</h3> 
+                </div>
+
+                <div  id = "contentOne" class="container">
+
+                    <div id = "videoContent">
+                        <iframe src="https://www.youtube.com/embed/ewMksAbgdBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div id = "contentOneText">                                                
+                        <p>
+                            For beginner artists, we recomment this beginner’s tutorial on the basics. It will teach you some of the basic principles like shape, line and value. 
+                            <br> <br>
+                            You can check out their youtube channel for the whole series. By the end you’ll have a strong grasp on the key fundamentals of drawing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Content section 2-->
+
+                <div id = "headerOne">
+                    <h2>Art for inspiration</h2>
+                </div>
+
+                <div class = "container" id = "contentTwo">
+
+                    <div style="float:left;" id = "twitterFeedOne">
+                        <a class="twitter-timeline" href="https://twitter.com/artdotcom?ref_src=twsrc%5Etfw" height = "560">Tweets by artdotcom</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <br>
+                    </div>
+
+                    <div>
+                        <p>
+                            Check out this art account and have a look through their media feed for great material to get inspired by.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="images/artwork2.png" alt="Artwork2" id = "contentTwoImage"> 
+                    </div>
+                </div>
+
+                <div id = "headerOne">
+                    <h2 id = "contentThreeHeader">External Resources </h2> <br>
+                </div>
+
+                <div>
+                    <div class = "container" id = "contentThree">
+                        <div> 
+                            <img src = "images/artwork3.png" alt="hand drawing guide">
+                        </div>
+
+                        <div>
+                            <p>Here’s a link  to a more detailed guide on <a href="https://www.adobe.com/uk/creativecloud/illustration/discover/how-to-draw-hands.html">drawing hands.</a></p>
+                        </div>
+                    </div>
+                
+                    <div class = "container" id = "contentFour">
+                        <div>
+                            <img src = "images/artwork4.png" alt = "Flower drawing guide">
+                        </div>
+
+                        <div id = "contentThreeP2">
+                            <p>Here’s a link  to a more detailed guide on <a href="https://beautifuldawndesigns.net/how-to-draw-flowers/">drawing flowers.</a></p>
+                        </div> 
+                    <div>
+                </div>
+                
+            </main>
+
+        </div>
+
+        <script src="scripts/script.js"></script>
+    </body>
+
+    <footer>
+        <div class="container">    
+            <div class="row align-items-end">
+                <div class="col">
+                    RGU Art Society &copy<br>email: hello@rguartsoc.co.uk<br>tel: 01224 125 434
+                </div>
+                <div class="col-6">
+                    Website Designed by Creatively Stupid Students (CSS)
+                </div>
+                <div class="col">
+                    Home Page Designed by<br>Jamie :)
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
