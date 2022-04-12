@@ -1,0 +1,106 @@
+/* remove default border and outline for buttons on this page */
+button {
+         border: none;
+        outline: none;
+      }
+
+.forum{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #477CA2;
+
+    
+}
+/* formatting for forum posts  */
+.forumPost{
+    background-color: #477CA2;
+    display:inline;
+    float:left;
+    width: 100%;
+}
+
+.ProfilePicture{
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+    display: inline;
+}
+
+.forumPostBody{
+    background-color: white;
+    display:inline;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 60px;
+    padding-bottom: 10px;
+    float:right;
+    width: 93%;
+}
+
+.PosterInformation{
+    height: 750px;
+    width: 70px;
+    display: inline;
+    background-color: white;
+    float: left;
+}
+
+.PosterInformationNoAttachment{
+     height: 200px;
+    width: 70px;
+    display: inline;
+    background-color: white;
+    float: left;
+}
+
+.PosterUsername{
+     margin-bottom: 0px;
+    display: inline;
+}
+
+.PostHeading{
+     margin-bottom: 0px;
+    display: block;
+}
+
+.PostBodyText{
+    margin-bottom: 0px;
+    display: block;
+}
+
+.PostImage{
+    display: block;
+}
+
+.ViewRepliesButton{
+    margin-top: 20px;
+    outline: none;
+    display: inline;
+    
+}
+
+/* formatting for replies  */
+.forumPostReply{
+    background-color: white;
+    display:inline;
+    margin-top: 20px;
+    float:right;
+    width: 93%;
+}
+
+.PosterInformationReply{
+    height: 300px;
+    width: 70px;
+    display: inline;
+    background-color: white;
+    float: left;
+}
+
+.PosterInformationReplyNoAttachment{
+    height: 100px;
+    width: 70px;
+    display: inline;
+    background-color: white;
+    float: left;
+}
