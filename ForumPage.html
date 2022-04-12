@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- This webpage was implemented by Alex Butuc-->
+<html>
+    <head>
+        <!-- title and css links go here -->
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/masterCSS.css">
+        
+        <link rel="stylesheet" href="CSS/forumPage.css">
+
+        <!--Links to the extrernal javascript used by certain elements on the page-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    
+        <!-- page-specific script for selecting forum types and showing/hiding comments --> 
+        
+        <script> 
+        function showTradArt() {
+            var tradArtPage = document.getElementById("traditionalArt");
+            var digitalArtPage = document.getElementById("digitalArt");
+            var TAButton = document.getElementById("tradArtButton")
+            var DAButton = document.getElementById("digitalArtButton")
+            
+                tradArtPage.style.display = "block";
+                digitalArtPage.style.display = "none";
+                TAButton.style.backgroundColor = "#477CA2";
+                DAButton.style.backgroundColor = "#5FAFE1";
+            
+            
+            }
+            
+        function showDigitalArt() {
+            var tradArtPage = document.getElementById("traditionalArt");
+            var digitalArtPage = document.getElementById("digitalArt");
+            var TAButton = document.getElementById("tradArtButton")
+            var DAButton = document.getElementById("digitalArtButton")
+            
+                tradArtPage.style.display = "none";
+                digitalArtPage.style.display = "block";
+                TAButton.style.backgroundColor = "#5FAFE1";
+                DAButton.style.backgroundColor = "#477CA2";
+            
+            }
+            
+    
+        // FUNCTION TO SHOW/HIDE COMMENTS SECTION FOR EACH POST INDIVIDUALLY      
+        function showReply(post, buttonid){
+            var reply = document.getElementById(post);
+            var button = document.getElementById(buttonid)
+            if (reply.style.display != "none"){
+                reply.style.display = "none";
+                button.innerHTML = "View replies ▲"
+               
+            } else if (reply.style.display === "none"){
+                reply.style.display = "block";
+                button.innerHTML = "View replies ▼"
+                
+            }
+        }
+        </script>
+        
+    </head>
+
+    <header>
+        <img style="position:absolute" src="images/Starry-Night.jpg" alt="Starry-Night" width = 100%, height = 250px>*
+			
+		<h1>RGU <br> ART <br> SOCIETY</h1>
+        
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="index.html">Home</a></div>
+                <div class="col"><a href="membersPage.html">Members Area</a></div>
+                <div class="col"><a href="imageGallery.html">Image Gallery</a></div>
+                <div class="col"><a href="ContactUs.html">Contact us</a></div>
+                <div class="col"><a href="calendar.html">Event Calendar</a></div>
+
+                <!-- The dropdown content is managed and displayed here -->
+                <div class="col">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <b>Art Forum</b>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background: lightblue;">
+                            <li><a class="dropdown-item" href="ForumPage.html"><b>Art Forum</b></a></li>
+                            <li><a class="dropdown-item" href="tutorials.html">Resources and Tutorials</a></li>
+                            <li><a class="dropdown-item" href="opportunities.html">Opportunities</a></li>
+                            <li><a class="dropdown-item" href="placesToVisit.html">Places to visit</a></li>
+                            <li><a class="dropdown-item" href="styleGuide.html">Art Style Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- The <b> tags go around the current page label -->
+        <!-- Explore More will be integrated with extra links that will appear by hovering over -->
+    </nav>
+
+    <main>
+        <div class="container" >
+            <h2> Art Forum </h2>
+            <h3> Welcome to the RGU Art Forum! Filter between traditional and digital art discussion here.</h3>
+        </div>
+        
+        
+        <button id="tradArtButton" onclick="showTradArt()" style="background-color: #477CA2; width: 90px; padding-left:20px; padding-right: 100px; padding-bottom: 10px; padding-top: 20px;"> Traditional </button>
+        <button id="digitalArtButton" onclick="showDigitalArt()" style="background-color: #5FAFE1; width: 50px; padding-left:20px; padding-right: 100px; padding-bottom: 10px; padding-top: 20px;" > Digital </button>
+        
+        <!-- TRADITIONAL ART CONTENT --> 
+        <div id="traditionalArt">
+            <div class="forum">
+                
+                <!-- TRADITIONAL ART POST 1 --->
+                <div class="forumPost">
+                    
+                        <div class="forumPostBody">
+                            <div class="PosterInformation"> 
+                            <img src="images/davinky.png" class="ProfilePicture">
+                            
+                            </div>
+                            <p class="PosterUsername"> daVinky </p>
+                            <h3 class="PostHeading"> Let's see your best traditional art!</h3>
+                            <p class="PostBodyText"> I'll start, here's my favourite piece I just       painted last week: </p>
+                            <img src="images/Mona_Lisa.jpg" style="width: auto; height: 610px;" class="PostImage">
+                            <button class="ViewRepliesButton" id="buttonTArtThread1" onclick ="showReply('tradArtThread1', 'buttonTArtThread1')"> View replies ▲ </button> <!--- <img src = "images/defaulticon.png" style="width:20px; height: auto;"> --->
+                            
+                            <!--- REPLIES --->
+                            <div  id="tradArtThread1" style="display: none;">
+                            <div class="forumPostReply">
+                                <div class="PosterInformationReply"> 
+                                    <img src="images/Michelangelo75.png" class="ProfilePicture">
+
+                                    </div>
+                                    <p class="PosterUsername"> Michelangelo75 </p>
+                                    <p class="PostBodyText"> I'm pretty proud of this one! </p>
+                                    <img src="images/the_creation_of_adam.png" style="width: 500px; height: auto" class="PostImage">
+                            </div>
+                            </div>
+                        </div>
+                    
+                </div>
+                
+                 <!-- TRADITIONAL ART POST 2 --->
+                
+                <div class="forumPost">
+                    
+                        <div class="forumPostBody">
+                            <div class="PosterInformation"> 
+                            <img src="images/MadameLeBrun.png" class="ProfilePicture">
+                            
+                            </div>
+                            <p class="PosterUsername"> MadameLeBrun </p>
+                            <h3 class="PostHeading"> Self portrait thread!</h3>
+                            <p class="PostBodyText"> I have an idea, why don’t we all share our favourite self portraits? Here’s mine, I was inspired by  Rubens’ “Portrait of Susanna Lunden”: </p>
+                            <img src="images/self_portrait_in_a_straw_hat.png" style="width: auto; height: 610px;" class="PostImage">
+                            <button class="ViewRepliesButton" id="buttonTArtThread2" onclick ="showReply('tradArtThread2', 'buttonTArtThread2')"> View replies ▲ </button> <!--- <img src = "defaulticon.png" style="width:20px; height: auto;"> --->
+                            
+                            <!--- REPLIES --->
+                            <div  id="tradArtThread2" style="display: none;">
+                            <div class="forumPostReply">
+                                <div class="PosterInformationReply"> 
+                                    <img src="images/vangogh.png" class="ProfilePicture">
+
+                                    </div>
+                                    <p class="PosterUsername"> sunflower1853 </p>
+                                    <p class="PostBodyText"> I've done quite a few in my time, here's the one that I have set as my profile picture: </p>
+                                    <img src="images/vincent-self-portrait-1887.jpg" style="width: 500px; height: auto" class="PostImage">
+                            </div>
+                                
+                                <div class="forumPostReply">
+                                <div class="PosterInformationReply"> 
+                                    <img src="images/IAmCourbet.png" class="ProfilePicture">
+
+                                    </div>
+                                    <p class="PosterUsername"> IAmCourbet </p>
+                                    <p class="PostBodyText"> Painted this back in 1845. I was inspired by the works of Rembrandt, José de Ribera, Francisco de Zurbarán, and Diego Velázquez after spending a lot of time at the Louvre copying their techniques.  </p>
+                                    <img src="images/Le_D%C3%A9sesp%C3%A9r%C3%A9.jpg" style="width: 500px; height: auto" class="PostImage">
+                            </div>
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+         <!-- DIGITAL ART CONTENT --> 
+        
+        <div id="digitalArt" style="display:none;">
+            <div class="forum">
+                <!-- DIGITAL ART POST 1 --->
+                <div class="forumPost">
+                    
+                        <div class="forumPostBody">
+                            <div class="PosterInformation"> 
+                            <img src="images/MegPrk.png" class="ProfilePicture">
+                            
+                            </div>
+                            <p class="PosterUsername"> MegPrk </p>
+                            <h3 class="PostHeading"> Vis Dev art thread? </h3>
+                            <p class="PostBodyText"> Hi everyone, I was recently involved with some visual development art for Disney’s Encanto that I’m finally able to share! Any other
+visual development artists in this forum please share your work under this post! </p>
+                            <img src="images/encanto_vis_dev.png" style="width: auto; height: 610px" class="PostImage">
+                            <button class="ViewRepliesButton" id="buttonDArtThread1" onclick ="showReply('digitalArtThread1', 'buttonDArtThread1')"> View replies ▲ </button> <!--- <img src = "images/defaulticon.png" style="width:20px; height: auto;"> --->
+                            
+                            <!--- REPLIES --->
+                            <div  id="digitalArtThread1" style="display: none;">
+                            <div class="forumPostReply">
+                                <div class="PosterInformationReply"> 
+                                    <img src="images/JaneWasTaken.png" class="ProfilePicture">
+
+                                    </div>
+                                    <p class="PosterUsername"> JaneWasTaken </p>
+                                    <p class="PostBodyText"> I do concept art for games, here's one I did a few years back... </p>
+                                    <img src="images/route66.jpg" style="width: 500px; height: auto" class="PostImage">
+                            </div>
+                            </div>
+                        </div>
+                    
+                </div>
+                  
+                <!-- DIGITAL ART POST 2 --->
+                <div class="forumPost">
+                    
+                        <div class="forumPostBody">
+                            <div class="PosterInformationNoAttachment"> 
+                            <img src="images/lickicon.gif" class="ProfilePicture">
+                            
+                            </div>
+                            <p class="PosterUsername"> kittyArtist92 </p>
+                            <h3 class="PostHeading"> Commission horror stories? </h3>
+                            <p class="PostBodyText"> What are some of your “favourite” commission horror stories to tell? One guy asked me to draw his OC shopping for white bread... </p>
+                            <button class="ViewRepliesButton" id="buttonDArtThread2" onclick ="showReply('digitalArtThread2', 'buttonDArtThread2')"> View replies ▲ </button> <!--- <img src = "images/defaulticon.png" style="width:20px; height: auto;"> --->
+                            
+                            <!--- REPLIES --->
+                            <div  id="digitalArtThread2" style="display: none;">
+                            <div class="forumPostReply">
+                                <div class="PosterInformationReplyNoAttachment"> 
+                                    <img src="images/mosspelt.png" class="ProfilePicture">
+                                    </div>
+                                    <p class="PosterUsername"> Mosspelt03 </p>
+                                    <p class="PostBodyText"> Hey, me too... what's going on? </p>
+                                    
+                            </div>
+                            <div class="forumPostReply">
+                                <div class="PosterInformationReplyNoAttachment"> 
+                                    <img src="images/moobloom.png" class="ProfilePicture">
+                                    </div>
+                                    <p class="PosterUsername"> MooBloom </p>
+                                    <p class="PostBodyText"> One commissioner I had asked for five changes then dipped when it was time to pay :( always ask for a deposit up front guys, and send the finished version AFTER you get your payment! </p>
+                                    
+                            </div>
+                                <div class="forumPostReply">
+                                <div class="PosterInformationReplyNoAttachment"> 
+                                    <img src="images/evierules13.png" class="ProfilePicture">
+                                    </div>
+                                    <p class="PosterUsername"> evieerules13 </p>
+                                    <p class="PostBodyText"> I've only had good interactions with my clients! :D #blessed </p>
+                                    
+                            </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">    
+            <div class="row align-items-end">
+                <div class="col">
+                    RGU Art Society &copy<br>email: hello@rguartsoc.co.uk<br>tel: 01224 125 434
+                </div>
+                <div class="col-6">
+                    Website Designed by Creatively Stupid Students (CSS)
+                </div>
+                <div class="col">
+                    Home Page Designed by<br>Alex Butuc
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
